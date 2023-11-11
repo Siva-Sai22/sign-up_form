@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <section class="container">
@@ -20,13 +26,14 @@
             This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
             <div style="margin-top: 32px;">You know you want to.</div>
             </div>
-            <div class="form-container">
-                <p class="form-text">Let's do this!</p>
+                <div class="form-container">
                 <form action="www.example.com" method="post">
+                    <p class="form-text">Let's do this!</p>
                     <ul>
                         <li>
                             <label for="firstname">FIRST NAME</label>
-                            <input type="text" name="firstname" id="firstname">
+                            <input type="text" name="firstname" id="firstname"
+                            required>
                         </li>
                         <li>
                             <label for="lastname">LAST NAME</label>
@@ -34,7 +41,7 @@
                         </li>
                         <li>
                             <label for="usermail">EMAIL</label>
-                            <input type="email" name="usermail" id="usermail">
+                            <input type="email" name="usermail" id="usermail" required>
                         </li>
                         <li>
                             <label for="phonenumber">PHONE NUMBER</label>
@@ -42,18 +49,21 @@
                         </li>
                         <li>
                             <label for="userpass">PASSWORD</label>
-                            <input type="password" name="userpass" id="userpass">
+                            <input type="password" name="userpass" id="userpass" required>
+                            <p class="error-text"></p>
                         </li>
                         <li>
                             <label for="passconf">CONFIRM PASSWORD</label>
-                            <input type="password" name="passconf" id="passconf">
+                            <input type="password" name="passconf" id="passconf" required>
                         </li>
                     </ul>
+                </div>
+                    <button type="submit">Create Account</button>
                 </form>
+            <div class="bottom-text">    
+                <p>Already have an account?</p>
+                <a href="login-form">Log in</a>
             </div>
-            <button type="submit">Create Account</button>
-            <p>Already have an account?</p>
-            <a href="login-form">Log in</a>
         </div>
     </section>
 </body>
