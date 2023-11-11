@@ -1,1 +1,38 @@
+@font-face {
+    font-family: norsebold;
+    src: url("./assets/Norse-Bold.otf") format("opentype");
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.plant-img {
+    height: 100%;
+    width: 500px;
+}
+
+.overlay-img {
+    top: 200px;
+    width: 500px;
+    height: 150px;
+    font-size: 80px;
+    font-family: norsebold, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

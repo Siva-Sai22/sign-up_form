@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <img src="./assets/background_left.webp">
-        <div>
-            <img src="./assets/logo.png">
-            <p>SIVA</p>
+    <section class="container">
+        <div class="images">
+            <img class="plant-img" src="./assets/background_left.webp">
+            <div class="overlay-img">
+                <img src="./assets/odin-lined.png" height="150px">
+                <span>SIVA</span>
+            </div>
         </div>
-    </div>
-    <div>
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign uo now to get started <br>You know you want to.</p>
         <div>
-            <p>Let's do this!</p>
-            <form action="www.example.com" method="post">
-                <label for="firstname">FIRST NAME</label>
-                <input type="text" name="firstname" id="firstname">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign uo now to get started <br>You know you want to.</p>
+            <div>
+                <p>Let's do this!</p>
+                <form action="www.example.com" method="post">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname">
 
-                <label for="lastname">LAST NAME</label>
-                <input type="text" name="lastname" id="lastname">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname">
 
-                <label for="usermail">EMAIL</label>
-                <input type="email" name="usermail" id="usermail">
+                    <label for="usermail">EMAIL</label>
+                    <input type="email" name="usermail" id="usermail">
 
-                <label for="phonenumber">PHONE NUMBER</label>
-                <input type="number" name="phonenumber" id="phonenumber">
+                    <label for="phonenumber">PHONE NUMBER</label>
+                    <input type="number" name="phonenumber" id="phonenumber">
 
-                <label for="userpass">PASSWORD</label>
-                <input type="password" name="userpass" id="userpass">
+                    <label for="userpass">PASSWORD</label>
+                    <input type="password" name="userpass" id="userpass">
 
-                <label for="passconf">CONFIRM PASSWORD</label>
-                <input type="password" name="passconf" id="passconf">
+                    <label for="passconf">CONFIRM PASSWORD</label>
+                    <input type="password" name="passconf" id="passconf">
 
-                <button type="submit">Create Account</button>
-            </form>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            <p>Already have an account?</p>
+            <a href="login-form">Log in</a>
         </div>
-        <p>Already have an account?</p>
-        <a href="login-form">Log in</a>
-    </div>
+    </section>
 </body>
 </html>
